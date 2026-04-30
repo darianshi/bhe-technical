@@ -17,3 +17,13 @@ class SieveTest(unittest.TestCase):
 
     def test_sieve_fuzz_nth_prime(self) -> None:
         pass
+
+    def test_sieve_negative_input(self) -> None:
+        sieve = Sieve()
+        self.assertRaises(ValueError, sieve.nth_prime, -1)
+        self.assertRaises(ValueError, sieve.nth_prime, -100)
+
+    def test_sieve_non_integer_input(self) -> None:
+        sieve = Sieve()
+        self.assertRaises(TypeError, sieve.nth_prime, 1.5)
+        self.assertRaises(TypeError, sieve.nth_prime, "100")
