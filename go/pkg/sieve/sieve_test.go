@@ -30,3 +30,10 @@ func FuzzNthPrime(f *testing.F) {
 		}
 	})
 }
+
+// test for negative input
+func TestNthPrimeNegativeInput(t *testing.T) {
+	sieve := NewSieve()
+
+	assert.Equal(t, int64(-1), sieve.NthPrime(-1))
+}
