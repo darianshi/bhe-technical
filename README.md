@@ -39,3 +39,7 @@ During the technical interview, your submission will be discussed, and you will 
 - Technical ability
 - Communication skills
 - Work habits and complementary skills
+
+
+## Interviewee Notes:
+I've included two implementations, first was in Python and the second in Go, and both have the same logic. I'm very comfortable with Python but haven't used Go much, so thought I'd give it a try for the technical. Willing to talk about either or during the interview! 
